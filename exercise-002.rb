@@ -21,7 +21,7 @@ File.new(INPUT) do |input_file|
 
     line.split.each do |word|
 
-      #{{{ 1. First, use a regular expressionremove all the non-alphanumeric characters. Remember that the regular expression is just /\W/.
+      #{{{ 1. First, use a regular expression remove all the non-alphanumeric characters. Remember that the regular expression is just /\W/.
 
       # We'll do this using a very simple regular expression. \w matches
       # anything that's a word. The definition of *word* here includes an
@@ -44,8 +44,8 @@ File.new(INPUT) do |input_file|
 
       # This process -- taking a word removing all the superfluous fluff from
       # it so that we can process it more efficiently, is called
-      # *normalization*. It's kind of it's own thing, it's own discrete step.
-      # In a few steps, we'll think about how to make our program reflect that.
+      # *normalization*. It's kind of its own thing, its own discrete step.  In
+      # a few steps, we'll think about how to make our program reflect that.
 
       puts word
 
