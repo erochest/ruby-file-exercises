@@ -39,7 +39,7 @@ File.open(INPUT) do |input_file|
   #{{{ 3. Read each line from the file and print it to the screen.
   # This executes the block (do |line| ... end) for every line in the file.
   input_file.each do |line|
-    putstr line
+    puts line
   end
   #}}}
 
