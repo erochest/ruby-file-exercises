@@ -15,13 +15,13 @@
 
 INPUT = 'jabberwocky.txt'
 
-File.new(INPUT) do |input_file|
+File.open(INPUT) do |input_file|
 
   input_file.each do |line|
 
     line.split.each do |word|
 
-      #{{{ 1. First, use a regular expressionremove all the non-alphanumeric characters. Remember that the regular expression is just /\W/.
+      #{{{ 1. First, use a regular expression remove all the non-alphanumeric characters. Remember that the regular expression is just /\W/.
 
       # We'll do this using a very simple regular expression. \w matches
       # anything that's a word. The definition of *word* here includes an
