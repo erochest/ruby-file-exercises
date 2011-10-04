@@ -6,7 +6,7 @@ File.open(INPUT) do |file_input|
 
   counts = Hash.new(0)
 
-  input_file.each do |line|
+  file_input.each do |line|
     line.split.each do |word|
       word = word.gsub(/\W/, '').downcase
 
