@@ -15,10 +15,11 @@ File.open(INPUT) do |input_file|
 
   input_file.each do |line|
 
+
     #{{{ 1. Split the file into words and print each on its own line.
     # Last time, we printed everything. This time, we'll split each line on
     # spaces and print out the words, one on each line.
-    line.split do |word|
+    line.split.each do |word|
       puts word
     end
     #}}}
