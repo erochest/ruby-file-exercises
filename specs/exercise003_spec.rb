@@ -16,9 +16,9 @@ describe "exercise-003.rb" do
 
     it "should compute the frequencies correctly." do
       # Just picked a few at random.
-      @lines.detect { |line| line == "'the'\t19\n" }.should_not be_nil
-      @lines.detect { |line| line == "'jabberwock'\t3\n" }.should_not be_nil
-      @lines.detect { |line| line == "'whiffling'\t1\n" }.should_not be_nil
+      @lines.should include("'the'\t19\n")
+      @lines.should include("'jabberwock'\t3\n")
+      @lines.should include("'whiffling'\t1\n")
     end
   end
 end
