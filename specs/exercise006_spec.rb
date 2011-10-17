@@ -4,7 +4,7 @@ require 'fileutils'
 describe "exercise-006" do
   describe "output" do
     before(:each) do
-      FileUtils.rm('jabberwocky-counts.txt')
+      FileUtils.rm('jabberwocky-counts.txt') if File.exists?('jabberwocky-counts.txt')
       system('ruby exercise-006.rb')
       @lines = File.open('jabberwocky-counts.txt') do |f|
         f.lines.to_a
