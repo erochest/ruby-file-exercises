@@ -17,3 +17,24 @@ This is a series of exercise for working with files in Ruby.
  1. `exercise-008.rb`: Refactor and reuse, part 2: classes.
  1. `exercise-009.rb`: Type/token ratio.
 
+# Specs
+
+There are specs tests for each file, in the `specs/` directory. Each script
+file has an error in it, and the specs won't pass until they're fixed.
+
+    $ rspec specs
+    .............All done. The output is in jabberwocky-counts.txt.
+    .All done. The output is in jabberwocky-counts.txt.
+    .All done. The output is in jabberwocky-counts.txt.
+    .All done. The output is in jabberwocky-counts.txt.
+    .All done. The output is in jabberwocky-counts.txt.
+    .All done. The output is in jabberwocky-counts.txt.
+    .All done. The output is in jabberwocky-counts.txt.
+    .All done. The output is in jabberwocky-counts.txt.
+    .All done. The output is in jabberwocky-counts.txt.
+    .All done. The output is in jabberwocky-counts.txt.
+    .
+
+    Finished in 0.50815 seconds
+    23 examples, 0 failures
+
